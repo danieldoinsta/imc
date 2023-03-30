@@ -1,0 +1,59 @@
+@charset "UFT-8";
+
+body {
+    background-image: url(imc.jpg);
+    background-repeat: no-repeat;
+    padding: 3%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 17%;
+}
+
+h1 {
+    color: rgb(255, 205, 6);
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    align-items: flex-end;
+}
+
+h1:hover {
+    background-color: rgb(11, 74, 74);
+}
+
+label {
+    color: rgb(45, 222, 10);
+    align-items: center;
+    flex-direction: column;
+    font-family: "Orbitron", sans-serif;
+}
+
+p {
+    color: rgb(255, 205, 6);
+    font-family: "Orbitron", sans-serif;
+    font-size: larger;
+    display: inline;
+}
+    
+p:hover {
+    background-color: rgb(11, 74, 74);
+}
+
+footer{
+    display:block;
+    position: fixed;
+    bottom: 0vh;
+    left: 0%;
+    width: 100%;
+    background-color:#a3c9a7;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size:larger;
+}
+
+footer:hover {
+    background-color: rgba(37, 236, 11, 0.535);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2012/04/14/14/32/skull-34133_960_720.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IMC - Índice de Massa Corporal </title>
+</head>
+
+<body>
+
+
+
+    <h1> IMC - Índice de Massa Corporal do Cristiano </h1>
+    <div class="container">
+
+        <label for="peso"> Peso (kg) </label>
+        <input type="number" id="peso" name="peso">
+
+        <br><br><br> <label for="altura"> Altura </label>
+        <input type="number" id="altura" name="altura"> <br><br><br>
+
+        <button onclick="calcularimc()"> Calcular IMC </button>
+
+        <br><br>
+
+        <p> Seu índice de massa corporal é <span id="resultado"> </span> </p>
+
+    </div>
+
+
+
+    <script>
+        function calcularimc() {
+            const peso = document.getElementById("peso").value;
+
+            const altura = document.getElementById("altura").value;
+
+            const imc = peso / (altura ** 2);
+
+            document.getElementById("resultado").textContent = imc.toFixed(2);
+        }
+
+    </script>
+
+    <footer>
+        <small>
+            Design by Daniel Alves &copy; | <a href="https://www.instagram.com/danieldoinsta/"> Instagram </a> </small>
+    </footer>
+
+</body>
+
+</html>
